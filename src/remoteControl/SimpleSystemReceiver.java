@@ -13,7 +13,7 @@ public class SimpleSystemReceiver implements SimpleControlSystemReceiver {
 	public void on() {
 		
 		if(name.contains("on")) {
-			System.out.println("Turning On the "+ name);
+			System.out.println("Turning On the "+ name.replace("on", ""));
 		}else {
 			System.out.println("on is Invalid command for "+ name);
 		}
@@ -22,7 +22,7 @@ public class SimpleSystemReceiver implements SimpleControlSystemReceiver {
 	@Override
 	public void off() {
 		if(name.contains("off")) {
-			System.out.println("Turning Off the "+ name);
+			System.out.println("Turning Off the "+ name.replace("off", ""));
 		}else {
 			System.out.println("off is Invalid command for "+ name);
 		}

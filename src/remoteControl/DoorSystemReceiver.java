@@ -11,7 +11,7 @@ public class DoorSystemReceiver implements DoorControlSystemReceiver{
 	public void open() {
 		
 		if(name.contains("open")) {
-			System.out.println("Opened "+name);
+			System.out.println("Opened "+name.replace("open", ""));
 		}else {
 			System.out.println("open is Invalid command for "+ name);
 		}
@@ -21,7 +21,7 @@ public class DoorSystemReceiver implements DoorControlSystemReceiver{
 	@Override
 	public void close() {
 		if(name.contains("close")) {
-			System.out.println("Closed "+name);
+			System.out.println("Closed "+name.replace("close", ""));
 		}else {
 			System.out.println("close is Invalid command for "+ name);
 		}

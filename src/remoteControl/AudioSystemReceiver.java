@@ -10,9 +10,9 @@ public class AudioSystemReceiver implements AudioControlSystemReceiver {
 	@Override
 	public void startPlay() {
 		if(name.contains("start")) {
-			System.out.println("Playing music on: "+ name);
+			System.out.println("Playing music on: "+ name.replace("start", ""));
 		}else {
-			System.out.println("startPlay is Invalid command for "+ name);
+			System.out.println("startPlay is Invalid command for "+ name.replace("start", ""));
 		}
 		
 		
@@ -20,10 +20,10 @@ public class AudioSystemReceiver implements AudioControlSystemReceiver {
 
 	@Override
 	public void stopPlay() {
-		if(name.contains("start")) {
-			System.out.println("Stopped playing: "+ name);
+		if(name.contains("stop")) {
+			System.out.println("Stopped playing: "+ name.replace("stop", ""));
 		}else {
-			System.out.println("stopPlay is Invalid command for "+ name);
+			System.out.println("stopPlay is Invalid command for "+ name.replace("stop", ""));
 		}
 		
 	}
